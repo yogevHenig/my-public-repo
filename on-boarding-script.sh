@@ -1,5 +1,5 @@
 
-client_id = $(az ad sp show --id $1 --query id -o tsv)
+client_id=$(az ad sp show --id $1 --query id -o tsv)
 
 az group create --name awp-scan-rg --location eastus
 
